@@ -226,19 +226,25 @@ body[data-page="bla"] .switcher__glider { background: #8ec5d9; }
 
 /* ---------- Menyknapp (visas på surfplatta/mobil) ---------- */
 .menu-btn {
-  display: none; position: relative; width: 42px; height: 42px; flex: none;
-  border: 1px solid var(--menu-btn-border, currentColor); border-radius: 50%; background: transparent; color: inherit;
+  display: none; align-items: center; gap: 8px; height: 40px; padding: 0 16px 0 14px; flex: none;
+  border: 1px solid var(--menu-btn-border, currentColor); border-radius: 999px; background: transparent; color: inherit;
+  font-size: 14px; font-weight: 500;
 }
-.menu-btn span {
-  position: absolute; left: 12px; right: 12px; height: 1.5px; border-radius: 2px; background: currentColor;
+.menu-btn__icon { position: relative; width: 16px; height: 12px; display: block; }
+.menu-btn__icon span {
+  position: absolute; left: 0; right: 0; height: 1.5px; border-radius: 2px; background: currentColor;
   transition: transform .35s var(--ease), opacity .2s;
 }
-.menu-btn span:nth-child(1) { top: 14px; }
-.menu-btn span:nth-child(2) { top: 20px; }
-.menu-btn span:nth-child(3) { top: 26px; }
-.menu-open .menu-btn span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
-.menu-open .menu-btn span:nth-child(2) { opacity: 0; }
-.menu-open .menu-btn span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+.menu-btn__icon span:nth-child(1) { top: 0; }
+.menu-btn__icon span:nth-child(2) { top: 5px; }
+.menu-btn__icon span:nth-child(3) { top: 10px; }
+.menu-open .menu-btn__icon span:nth-child(1) { transform: translateY(5px) rotate(45deg); }
+.menu-open .menu-btn__icon span:nth-child(2) { opacity: 0; }
+.menu-open .menu-btn__icon span:nth-child(3) { transform: translateY(-5px) rotate(-45deg); }
+
+/* Dator/mobil-växling (mobil = mobilskisserna i Figma) */
+@media (min-width: 641px) { .only-m { display: none !important; } }
+@media (max-width: 640px) { .only-d { display: none !important; } }
 
 /* Långa e-postadresser får brytas i stället för att sticka ut */
 /* Nummer, tider, e-post och bindestreckord hålls ihop (se keepTogether i app.js) */
@@ -251,7 +257,7 @@ p, li, dd, small, blockquote { text-wrap: pretty; }
 
 /* ---------- Responsivt (gemensamt) ---------- */
 @media (max-width: 1080px) {
-  .menu-btn { display: block; }
+  .menu-btn { display: inline-flex; }
   .header__cta { gap: 12px; margin-left: auto; }
   .nav {
     position: absolute; left: 0; right: 0; top: 100%;
@@ -292,9 +298,6 @@ p, li, dd, small, blockquote { text-wrap: pretty; }
   .topbar__in { height: auto; min-height: 36px; padding: 8px 0; }
   .switcher { bottom: calc(12px + env(safe-area-inset-bottom)); }
   .switcher button { padding: 0 13px; }
-}
-@media (max-width: 420px) {
-  .logo__text { display: none; }
 }
 @media (max-width: 340px) {
   .switcher button .i { display: none; }

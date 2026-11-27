@@ -1,0 +1,197 @@
+/* ==========================================================
+   Mobil (≤ 640 px) – följer mobilskisserna i Figma
+   ========================================================== */
+
+.topbar__m { display: none; }
+
+@media (max-width: 640px) {
+  /* ---------- Gemensamt ---------- */
+  .page .section { padding: 64px 0; }
+  .page h1 { font-size: clamp(38px, 12vw, 48px); line-height: 1.06; }
+  .page h2 { font-size: clamp(28px, 8.6vw, 34px); }
+
+  /* Toppremsa: "Vardagar 07–16" + "Ring Mattias: …" */
+  .page .topbar__info, .page .topbar__urgent { display: none; }
+  .page .topbar__in { justify-content: space-between; padding: 0; min-height: 40px; }
+  .page .topbar__m { display: flex; width: 100%; justify-content: space-between; align-items: center; gap: 12px; font-size: 12.5px; }
+  .page .topbar__m a { font-weight: 600; }
+
+  /* Sidhuvud: logga + namn + "≡ Meny" */
+  .page .header__cta { display: none; }
+  .page .header__in { height: 66px; }
+  .page .logo { gap: 10px; }
+  .page .logo__text small { display: none; }
+  .page .logo-mark { height: 42px; }
+  .page .menu-btn { margin-left: auto; }
+
+  /* Hero: knappar i full bredd under varandra, punkter under varandra */
+  .page .hero .btn-row { flex-direction: column; }
+  .page .hero .btn-row .btn { width: 100%; height: 54px; }
+  .page .checks { flex-direction: column; gap: 10px; }
+
+  /* Rubrikrader utan sidotext */
+  .page .section-head--split > p,
+  .page .faq-layout > div:first-child > p.muted,
+  .page .services__intro > p.muted { display: none; }
+  .page .section-head { margin-bottom: 28px; }
+  .page .faq-layout { gap: 24px; }
+  .page .rform__note { display: none; }
+
+  /* Om mig: rund bild + namn överst */
+  .page .about-m { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+  .page .about-m__photo {
+    width: 72px; height: 72px; border-radius: 50%; flex: none;
+    display: grid; place-items: center; font-size: 12px;
+  }
+  .page .about-m__photo .i { font-size: 26px; stroke-width: 1.5; }
+  .page .about-m > span:last-child { display: flex; flex-direction: column; line-height: 1.3; }
+  .page .about-m strong { font-size: 17px; font-weight: 600; }
+  .page .about-m small { font-size: 13px; color: var(--muted); }
+
+  /* Sidfot: logga, telefon, e-post, Facebook, copyright */
+  .page .footer__cols, .page .footer__contact { display: none; }
+  .page .footer__top { flex-direction: column; align-items: flex-start; gap: 24px; padding-bottom: 24px; }
+  .page .footer__m { display: flex; flex-direction: column; gap: 8px; font-size: 14.5px; }
+  .page .footer__m-phone { font-weight: 600; font-size: 16px; }
+  .page .footer__bottom { flex-direction: column; align-items: flex-start; gap: 6px; border: 0; padding-top: 0; }
+  .page .footer__bottom > :not(:first-child) { display: none; }
+  .page .footer__bottom { margin-bottom: 150px; } /* plats för knappfältet + designmenyn */
+
+  /* Fast knappfält längst ned */
+  .page .mbar {
+    position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom)); z-index: 90;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 6px;
+    border-radius: 999px; box-shadow: 0 12px 30px rgba(0, 0, 0, .3);
+  }
+  .page .mbar .btn { height: 48px; padding: 0 12px; font-size: 15px; width: 100%; }
+  .page .mbar .btn:hover { transform: none; }
+
+  /* Designmenyn ligger ovanför knappfältet */
+  .switcher { bottom: calc(76px + env(safe-area-inset-bottom)); }
+}
+
+/* ---------- 1. Ljus ---------- */
+@media (max-width: 640px) {
+  .page--ljus .topbar__m a { color: var(--accent-soft); }
+  .page--ljus .hero { padding: 40px 0 56px; }
+  .page--ljus .hero__in { gap: 28px; }
+  .page--ljus .hero__media { order: 0; aspect-ratio: 16 / 10.5; }
+  .page--ljus .contact-card { max-width: none; }
+
+  /* Tjänster som liggande kort: ikon | text | pil */
+  .page--ljus .grid-4 { gap: 12px; }
+  .page--ljus .service {
+    position: relative; display: grid; grid-template-columns: 48px 1fr 20px; column-gap: 16px; row-gap: 2px;
+    align-items: center; padding: 18px 20px;
+  }
+  .page--ljus .service__icon { grid-row: 1 / 3; margin: 0; width: 48px; height: 48px; }
+  .page--ljus .service h3 { grid-column: 2; align-self: end; font-size: 18px; }
+  .page--ljus .service p { grid-column: 2; align-self: start; font-size: 14px; }
+  .page--ljus .service .link { position: absolute; inset: 0; opacity: 0; font-size: 0; }
+  .page--ljus .m-arrow { grid-column: 3; grid-row: 1 / 3; color: var(--text); font-size: 18px; display: flex; }
+
+  /* Steg som liggande kort: siffra | text */
+  .page--ljus .grid-3 { gap: 12px; }
+  .page--ljus .step { display: grid; grid-template-columns: 32px 1fr; column-gap: 16px; row-gap: 2px; align-items: center; padding: 18px 20px; }
+  .page--ljus .step__num { grid-row: 1 / 3; margin: 0; }
+  .page--ljus .step h3 { margin: 0; align-self: end; }
+  .page--ljus .step p { align-self: start; }
+
+  /* Om mig */
+  .page--ljus .about { display: block; }
+  .page--ljus .about__photo { display: none; }
+  .page--ljus .about-m__photo { background: #e8e1d6; color: #9c9387; }
+
+  .page--ljus .mbar { background: var(--dark); }
+  .page--ljus .mbar__call { background: var(--accent); color: #fff; }
+  .page--ljus .mbar__alt { background: #fff; color: var(--text); }
+}
+
+/* ---------- 2. Mörk ---------- */
+@media (max-width: 640px) {
+  .page--mork .topbar__m a { color: var(--accent); }
+  .page--mork .hero { padding: 48px 0 40px; }
+  .page--mork .contact-card { max-width: none; }
+
+  /* Snabbkort 2×2: ikon, rubrik, kort undertext */
+  .page--mork .quick { padding: 8px 0 48px; }
+  .page--mork .quick .grid-4 { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .page--mork .qcard { padding: 16px; gap: 2px; }
+  .page--mork .qcard p, .page--mork .qcard .link { display: none; }
+  .page--mork .qcard__icon { margin-bottom: 12px; }
+  .page--mork .qcard h3 { font-size: 15.5px; }
+  .page--mork .qcard__m { font-size: 13px; color: var(--muted); }
+
+  /* Tjänster: bild | text | pil */
+  .page--mork .grid-4 { gap: 12px; }
+  .page--mork .pcard { position: relative; flex-direction: row; align-items: center; gap: 14px; padding: 12px 16px 12px 12px; }
+  .page--mork .pcard__img { width: 64px; height: 64px; aspect-ratio: auto; flex: none; border-radius: 10px; }
+  .page--mork .pcard__body { padding: 0; gap: 4px; }
+  .page--mork .pcard h3 { font-size: 17px; }
+  .page--mork .pcard p { font-size: 13.5px; }
+  .page--mork .pcard .link { position: absolute; inset: 0; opacity: 0; font-size: 0; }
+  .page--mork .pcard__body { padding-right: 30px; }
+  .page--mork .m-arrow { position: absolute; right: 16px; top: 50%; transform: translateY(-50%); color: var(--accent); font-size: 18px; display: flex; }
+
+  /* Steg: kursiv siffra | text */
+  .page--mork .grid-3 { gap: 12px; }
+  .page--mork .step { display: grid; grid-template-columns: 40px 1fr; column-gap: 14px; row-gap: 2px; align-items: center; padding: 18px 20px; }
+  .page--mork .step__num { grid-row: 1 / 3; margin: 0; font-size: 26px; }
+  .page--mork .step h3 { margin: 0; align-self: end; }
+  .page--mork .step p { align-self: start; }
+
+  /* Om mig */
+  .page--mork .about { display: block; }
+  .page--mork .about__photo { display: none; }
+  .page--mork .about-m__photo { background: linear-gradient(160deg, #2b261f, #1f1c18); border: 1px solid #2f2a24; color: #7d756a; }
+
+  .page--mork .footer__brand p { display: none; }
+
+  .page--mork .mbar { background: rgba(24, 24, 24, .94); border: 1px solid #2c2c2c; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  .page--mork .mbar__call { background: var(--accent); color: #1a120c; }
+  .page--mork .mbar__alt { background: transparent; color: #fff; border-color: rgba(255, 255, 255, .25); }
+}
+
+/* ---------- 3. Blå ---------- */
+@media (max-width: 640px) {
+  .page--bla .hero { padding-top: 40px; }
+  .page--bla h1 { font-size: clamp(34px, 10.5vw, 42px); }
+  .page--bla .hero .btn-row { margin-bottom: 40px; }
+
+  /* Tjänster: offertknappen efter listan */
+  .page--bla .services { gap: 0; }
+  .page--bla .services__intro h2 { margin-bottom: 24px; }
+  .page--bla .services__mbtn { width: 100%; margin-top: 16px; height: 54px; }
+
+  /* Steg: siffra till vänster, vänsterställd text */
+  .page--bla .timeline { gap: 22px; }
+  .page--bla .tstep { display: grid; grid-template-columns: 44px 1fr; column-gap: 16px; row-gap: 2px; align-items: center; text-align: left; }
+  .page--bla .tstep__num { grid-row: 1 / 3; margin: 0; }
+  .page--bla .tstep h3 { margin: 0; align-self: end; }
+  .page--bla .tstep p { align-self: start; max-width: none; }
+
+  /* Om mig */
+  .page--bla .about-card { display: block; padding: 22px; }
+  .page--bla .about-card__photo, .page--bla.page--bla .sign > :not(.link) { display: none; }
+  .page--bla h2 { font-size: clamp(26px, 7.4vw, 30px); }
+  .page--bla .about-m__photo { background: #e3e8eb; color: #8a979e; }
+  .page--bla .sign { margin-top: 4px; }
+
+  .page--bla .footer__brand > span:last-child { display: none; }
+  .page--bla .footer__m-fb { color: var(--accent); }
+  .page--bla .footer__m-phone { color: #fff; }
+
+  .page--bla .mbar { background: var(--slate-3); border: 1px solid rgba(255, 255, 255, .08); }
+  .page--bla .mbar__call { background: var(--accent); color: var(--accent-ink); }
+  .page--bla .mbar__alt { background: transparent; color: #fff; border-color: rgba(255, 255, 255, .3); }
+}
+
+/* Footerlänk "Se mer på Facebook" i accentfärg (ljus/mörk) */
+.page--ljus .footer__m-fb { color: var(--accent-soft); }
+.page--mork .footer__m-fb { color: var(--accent); }
+
+/* Rubriker vänsterställda på mobil, som i skisserna */
+@media (max-width: 640px) {
+  .page .section-head--center { text-align: left; }
+  .page .eyebrow--center { justify-content: flex-start; }
+}

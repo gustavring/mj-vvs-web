@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/ljus.css">
   <link rel="stylesheet" href="css/mork.css">
   <link rel="stylesheet" href="css/bla.css">
+  <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
 
@@ -65,6 +66,7 @@
             <span><svg class="i"><use href="#i-pin"/></svg>Matfors · Sundsvall med omnejd</span>
             <a href="mailto:mattias.jansson@mjrorteknik.se"><svg class="i"><use href="#i-mail"/></svg>mattias.jansson@mjrorteknik.se</a>
           </div>
+          <div class="topbar__m"><span>Vardagar 07–16</span><a href="tel:0722008177">Ring Mattias: 072-200 81 77</a></div>
           <div class="topbar__urgent">Akut läckage? Ring Mattias direkt: <a href="tel:0722008177">072-200 81 77</a></div>
         </div>
       </div>
@@ -86,16 +88,16 @@
             <a href="tel:0722008177" class="header__phone"><svg class="i"><use href="#i-phone"/></svg>072-200 81 77</a>
             <a href="#kontakt" class="btn btn--dark btn--sm" data-scroll>Begär offert</a>
           </div>
-          <button type="button" class="menu-btn" aria-label="Öppna meny" aria-expanded="false" data-menu><span></span><span></span><span></span></button>
+          <button type="button" class="menu-btn" aria-label="Öppna meny" aria-expanded="false" data-menu><span class="menu-btn__icon"><span></span><span></span><span></span></span><span class="menu-btn__label">Meny</span></button>
         </div>
       </header>
 
       <section class="hero" id="top">
         <div class="wrap hero__in">
           <div class="hero__text">
-            <p class="eyebrow" data-reveal>Eget företag · Matfors &amp; Sundsvall</p>
+            <p class="eyebrow" data-reveal><span class="only-d">Eget företag · Matfors &amp; Sundsvall</span><span class="only-m">Eget företag i Matfors</span></p>
             <h1 data-reveal style="--d:.08s">Trygg VVS,<br>utförd med omsorg.</h1>
-            <p class="lead" data-reveal style="--d:.16s">Jag heter Mattias och driver MJ Rörteknik – ett eget företag i Matfors. När du ringer svarar jag själv, och det är jag som kommer hem till dig och gör jobbet.</p>
+            <p class="lead" data-reveal style="--d:.16s">Jag heter Mattias och driver MJ Rörteknik – ett eget företag i Matfors. <span class="only-d">När du ringer svarar jag själv, och det är jag som kommer hem till dig och gör jobbet.</span><span class="only-m">Jag svarar själv i telefon och gör jobbet hos dig.</span></p>
             <div class="btn-row" data-reveal style="--d:.24s">
               <a href="#kontakt" class="btn btn--dark" data-scroll><svg class="i"><use href="#i-arrow"/></svg>Begär offert</a>
               <a href="tel:0722008177" class="btn btn--ghost"><svg class="i"><use href="#i-phone"/></svg>Ring Mattias</a>
@@ -135,26 +137,26 @@
             <article class="service" data-reveal style="--d:.05s">
               <span class="service__icon"><svg class="i"><use href="#i-bath"/></svg></span>
               <h3>Badrum</h3>
-              <p>Renovering och installation av dusch, WC, handfat och golvbrunn.</p>
-              <a href="#kontakt" class="link" data-scroll>Läs mer <svg class="i"><use href="#i-arrow"/></svg></a>
+              <p><span class="only-d">Renovering och installation av dusch, WC, handfat och golvbrunn.</span><span class="only-m">Dusch, WC, handfat och golvbrunn.</span></p>
+              <a href="#kontakt" class="link" data-scroll>Läs mer <svg class="i"><use href="#i-arrow"/></svg></a><span class="m-arrow only-m" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
             </article>
             <article class="service" data-reveal style="--d:.12s">
               <span class="service__icon"><svg class="i"><use href="#i-wrench"/></svg></span>
               <h3>Service &amp; reparation</h3>
-              <p>Läckor, stopp, droppande kranar och byte av blandare.</p>
-              <a href="#kontakt" class="link" data-scroll>Läs mer <svg class="i"><use href="#i-arrow"/></svg></a>
+              <p><span class="only-d">Läckor, stopp, droppande kranar och byte av blandare.</span><span class="only-m">Läckor, stopp och byte av blandare.</span></p>
+              <a href="#kontakt" class="link" data-scroll>Läs mer <svg class="i"><use href="#i-arrow"/></svg></a><span class="m-arrow only-m" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
             </article>
             <article class="service" data-reveal style="--d:.19s">
               <span class="service__icon"><svg class="i"><use href="#i-heater"/></svg></span>
               <h3>Värme</h3>
-              <p>Element, golvvärme, varmvattenberedare och värmepumpar.</p>
-              <a href="#kontakt" class="link" data-scroll>Läs mer <svg class="i"><use href="#i-arrow"/></svg></a>
+              <p><span class="only-d">Element, golvvärme, varmvattenberedare och värmepumpar.</span><span class="only-m">Element, golvvärme, beredare och värmepumpar.</span></p>
+              <a href="#kontakt" class="link" data-scroll>Läs mer <svg class="i"><use href="#i-arrow"/></svg></a><span class="m-arrow only-m" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
             </article>
             <article class="service" data-reveal style="--d:.26s">
               <span class="service__icon"><svg class="i"><use href="#i-drop"/></svg></span>
               <h3>Nyinstallation</h3>
-              <p>Rördragning i nybygge, tillbyggnad och kök.</p>
-              <a href="#kontakt" class="link" data-scroll>Läs mer <svg class="i"><use href="#i-arrow"/></svg></a>
+              <p><span class="only-d">Rördragning i nybygge, tillbyggnad och kök.</span><span class="only-m">Rördragning i nybygge och kök.</span></p>
+              <a href="#kontakt" class="link" data-scroll>Läs mer <svg class="i"><use href="#i-arrow"/></svg></a><span class="m-arrow only-m" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
             </article>
           </div>
         </div>
@@ -164,12 +166,12 @@
         <div class="wrap">
           <div class="section-head section-head--center">
             <p class="eyebrow eyebrow--center" data-reveal>Så går det till</p>
-            <h2 data-reveal style="--d:.06s">Enkelt från första samtal till färdigt jobb</h2>
+            <h2 data-reveal style="--d:.06s"><span class="only-d">Enkelt från första samtal till färdigt jobb</span><span class="only-m">Enkelt från samtal till färdigt jobb</span></h2>
           </div>
           <div class="grid-3">
-            <article class="step" data-reveal style="--d:.05s"><span class="step__num">1</span><h3>Ring eller skriv till mig</h3><p>Du pratar direkt med mig – ingen växel och inga mellanhänder.</p></article>
-            <article class="step" data-reveal style="--d:.13s"><span class="step__num">2</span><h3>Få en tydlig offert</h3><p>Jag tittar på jobbet och ger dig ett fast pris – inga överraskningar.</p></article>
-            <article class="step" data-reveal style="--d:.21s"><span class="step__num">3</span><h3>Jag gör jobbet</h3><p>Rent, noggrant och klart när jag sagt. ROT-avdraget sköter jag.</p></article>
+            <article class="step" data-reveal style="--d:.05s"><span class="step__num">1</span><h3>Ring eller skriv till mig</h3><p><span class="only-d">Du pratar direkt med mig – ingen växel och inga mellanhänder.</span><span class="only-m">Du pratar direkt med mig – ingen växel.</span></p></article>
+            <article class="step" data-reveal style="--d:.13s"><span class="step__num">2</span><h3>Få en tydlig offert</h3><p><span class="only-d">Jag tittar på jobbet och ger dig ett fast pris – inga överraskningar.</span><span class="only-m">Fast pris – inga överraskningar.</span></p></article>
+            <article class="step" data-reveal style="--d:.21s"><span class="step__num">3</span><h3>Jag gör jobbet</h3><p><span class="only-d">Rent, noggrant och klart när jag sagt. ROT-avdraget sköter jag.</span><span class="only-m">Noggrant och klart när jag sagt.</span></p></article>
           </div>
         </div>
       </section>
@@ -184,12 +186,13 @@
             </div>
           </div>
           <div class="about__text">
+            <div class="about-m only-m"><span class="about-m__photo">Foto</span><span><strong>Mattias Jansson</strong><small>Ägare &amp; VVS-montör</small></span></div>
             <p class="eyebrow" data-reveal>Om mig</p>
             <h2 data-reveal style="--d:.06s">Hej, jag heter Mattias!</h2>
-            <p class="muted" data-reveal style="--d:.12s">Jag är rörmokaren bakom MJ Rörteknik. 2024 startade jag eget här i Matfors, och sedan dess hjälper jag privatpersoner och företag i Sundsvall med omnejd – med allt från droppande kranar till hela badrum.</p>
-            <p class="muted" data-reveal style="--d:.16s">När du anlitar mig är det jag som svarar i telefon, kommer hem till dig och gör jobbet. Inga mellanhänder – bara tydliga besked och ett jobb jag kan stå för.</p>
+            <p class="muted" data-reveal style="--d:.12s"><span class="only-d">Jag är rörmokaren bakom MJ Rörteknik. 2024 startade jag eget här i Matfors, och sedan dess hjälper jag privatpersoner och företag i Sundsvall med omnejd – med allt från droppande kranar till hela badrum.</span><span class="only-m">Jag är rörmokaren bakom MJ Rörteknik. 2024 startade jag eget i Matfors och hjälper privatpersoner och företag i Sundsvall med omnejd.</span></p>
+            <p class="muted" data-reveal style="--d:.16s"><span class="only-d">När du anlitar mig är det jag som svarar i telefon, kommer hem till dig och gör jobbet. Inga mellanhänder – bara tydliga besked och ett jobb jag kan stå för.</span><span class="only-m">Det är jag som svarar i telefon, kommer hem till dig och gör jobbet – inga mellanhänder.</span></p>
             <blockquote class="quote" data-reveal style="--d:.2s">”Jag behandlar ditt hem som om det vore mitt eget.”</blockquote>
-            <dl class="stats" data-reveal style="--d:.26s">
+            <dl class="stats only-d" data-reveal style="--d:.26s">
               <div><dt>2024</dt><dd>Startade eget</dd></div>
               <div><dt>Matfors</dt><dd>Hemort</dd></div>
               <div><dt>1 kontakt</dt><dd>Du pratar alltid med mig</dd></div>
@@ -215,7 +218,7 @@
           <div class="contact__info">
             <p class="eyebrow" data-reveal>Kontakt</p>
             <h2 data-reveal style="--d:.06s">Hör av dig direkt<br>till mig.</h2>
-            <p class="contact__lead" data-reveal style="--d:.12s">Det är jag själv som svarar och som kommer ut på jobbet. Ring helst – eller skicka en förfrågan så återkommer jag med en offert.</p>
+            <p class="contact__lead" data-reveal style="--d:.12s"><span class="only-d">Det är jag själv som svarar och som kommer ut på jobbet. Ring helst – eller skicka en förfrågan så återkommer jag med en offert.</span><span class="only-m">Det är jag själv som svarar och kommer ut på jobbet. Ring helst – eller skriv här.</span></p>
             <a href="tel:0722008177" class="cbox cbox--warm" data-reveal style="--d:.18s">
               <small>Snabbast når du mig på telefon</small>
               <span class="cbox__main"><span class="cbox__icon cbox__icon--fill"><svg class="i"><use href="#i-phone"/></svg></span><strong class="huge">072-200 81 77</strong></span>
@@ -228,7 +231,7 @@
             </a>
             <ul class="facts" data-reveal style="--d:.3s">
               <li><span class="facts__icon"><svg class="i"><use href="#i-clock"/></svg></span><span><small>Öppettider</small><span>Vardagar 07:00–16:00</span></span></li>
-              <li><span class="facts__icon"><svg class="i"><use href="#i-pin"/></svg></span><span><small>Område</small><span>Matfors, Sundsvall, Stöde, Njurunda, Timrå m.fl.</span></span></li>
+              <li class="only-d"><span class="facts__icon"><svg class="i"><use href="#i-pin"/></svg></span><span><small>Område</small><span>Matfors, Sundsvall, Stöde, Njurunda, Timrå m.fl.</span></span></li>
             </ul>
           </div>
           <div class="form-card" data-reveal style="--d:.15s" data-form></div>
@@ -241,6 +244,7 @@
             <div class="footer__brand">
               <span class="logo-foot logo--white" data-logo="full"></span>
             </div>
+            <div class="footer__m only-m"><a href="tel:0722008177" class="footer__m-phone">072-200 81 77</a><a href="mailto:mattias.jansson@mjrorteknik.se">mattias.jansson@mjrorteknik.se</a><a href="https://www.facebook.com/" target="_blank" rel="noopener" class="footer__m-fb">Se mer på Facebook</a></div>
             <div class="footer__cols">
               <div><h4>Kontakt</h4><a href="tel:0722008177">072-200 81 77</a><a href="mailto:mattias.jansson@mjrorteknik.se">mattias.jansson@mjrorteknik.se</a><span>Matfors, Sundsvall</span></div>
               <div><h4>Sidan</h4><a href="#tjanster" data-scroll>Tjänster</a><a href="#process" data-scroll>Så går det till</a><a href="#om" data-scroll>Om mig</a><a href="#faq" data-scroll>Vanliga frågor</a></div>
@@ -250,6 +254,7 @@
           <div class="footer__bottom"><span>© 2026 MJ Rörteknik AB · Org.nr XXXXXX-XXXX</span><a href="#">Integritetspolicy</a></div>
         </div>
       </footer>
+      <div class="mbar only-m"><a href="tel:0722008177" class="btn mbar__call"><svg class="i"><use href="#i-phone"/></svg>Ring Mattias</a><a href="#kontakt" class="btn mbar__alt" data-scroll>Begär offert</a></div>
     </div>
   </template>
 
@@ -265,6 +270,7 @@
             <span><svg class="i"><use href="#i-pin"/></svg>Matfors · Sundsvall med omnejd</span>
             <a href="mailto:mattias.jansson@mjrorteknik.se"><svg class="i"><use href="#i-mail"/></svg>mattias.jansson@mjrorteknik.se</a>
           </div>
+          <div class="topbar__m"><span>Vardagar 07–16</span><a href="tel:0722008177">Ring Mattias: 072-200 81 77</a></div>
           <div class="topbar__urgent">Akut läckage? Ring Mattias direkt: <a href="tel:0722008177">072-200 81 77</a></div>
         </div>
       </div>
@@ -286,14 +292,14 @@
             <a href="tel:0722008177" class="btn btn--outline btn--sm"><svg class="i"><use href="#i-phone"/></svg>072-200 81 77</a>
             <a href="#kontakt" class="btn btn--accent btn--sm" data-scroll>Begär offert</a>
           </div>
-          <button type="button" class="menu-btn" aria-label="Öppna meny" aria-expanded="false" data-menu><span></span><span></span><span></span></button>
+          <button type="button" class="menu-btn" aria-label="Öppna meny" aria-expanded="false" data-menu><span class="menu-btn__icon"><span></span><span></span><span></span></span><span class="menu-btn__label">Meny</span></button>
         </div>
       </header>
 
       <section class="hero" id="top">
         <div class="hero__bg"><img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=2000&q=75" alt=""></div>
         <div class="wrap hero__in">
-          <p class="eyebrow" data-reveal>Eget företag · Matfors &amp; Sundsvall</p>
+          <p class="eyebrow" data-reveal><span class="only-d">Eget företag · Matfors &amp; Sundsvall</span><span class="only-m">Eget företag i Matfors</span></p>
           <h1 data-reveal style="--d:.08s">Trygg VVS,<br>utförd med omsorg.</h1>
           <p class="lead" data-reveal style="--d:.16s">Jag heter Mattias och driver MJ Rörteknik – ett eget företag i Matfors. När du ringer svarar jag själv, och det är jag som kommer hem till dig och gör jobbet.</p>
           <div class="btn-row" data-reveal style="--d:.24s">
@@ -322,22 +328,22 @@
         <div class="wrap grid-4">
           <a href="tel:0722008177" class="qcard qcard--hot" data-reveal style="--d:.05s">
             <span class="qcard__icon"><svg class="i"><use href="#i-alert"/></svg></span>
-            <h3>Ring Mattias</h3><p>Jag svarar själv – även vid akuta läckor.</p>
+            <h3>Ring Mattias</h3><p>Jag svarar själv – även vid akuta läckor.</p><small class="qcard__m only-m">072-200 81 77</small>
             <span class="link">072-200 81 77 <svg class="i"><use href="#i-arrow"/></svg></span>
           </a>
           <a href="#kontakt" class="qcard" data-scroll data-reveal style="--d:.11s">
             <span class="qcard__icon"><svg class="i"><use href="#i-file"/></svg></span>
-            <h3>Begär offert</h3><p>Skicka en förfrågan med bilder.</p>
+            <h3>Begär offert</h3><p>Skicka en förfrågan med bilder.</p><small class="qcard__m only-m">Till formuläret</small>
             <span class="link">Till formuläret <svg class="i"><use href="#i-arrow"/></svg></span>
           </a>
           <a href="#tjanster" class="qcard" data-scroll data-reveal style="--d:.17s">
             <span class="qcard__icon"><svg class="i"><use href="#i-list"/></svg></span>
-            <h3>Tjänster</h3><p>Badrum, service, värme m.m.</p>
+            <h3>Tjänster</h3><p>Badrum, service, värme m.m.</p><small class="qcard__m only-m">Se vad jag gör</small>
             <span class="link">Se tjänster <svg class="i"><use href="#i-arrow"/></svg></span>
           </a>
           <a href="#kontakt" class="qcard" data-scroll data-reveal style="--d:.23s">
             <span class="qcard__icon"><svg class="i"><use href="#i-clock"/></svg></span>
-            <h3>Öppettider</h3><p>Vardagar 07:00–16:00</p>
+            <h3>Öppettider</h3><p>Vardagar 07:00–16:00</p><small class="qcard__m only-m">Vardagar 07–16</small>
             <span class="link">Kontakt <svg class="i"><use href="#i-arrow"/></svg></span>
           </a>
         </div>
@@ -355,19 +361,19 @@
           <div class="grid-4">
             <article class="pcard" data-reveal style="--d:.05s">
               <div class="pcard__img"><img src="https://images.unsplash.com/photo-1604709177225-055f99402ea3?w=700&q=70" alt="Modernt badrum" loading="lazy"></div>
-              <div class="pcard__body"><h3>Badrum</h3><p>Renovering och installation av dusch, WC, handfat och golvbrunn.</p><a href="#kontakt" class="link" data-scroll>Läs mer <svg class="i"><use href="#i-arrow"/></svg></a></div>
+              <div class="pcard__body"><h3>Badrum</h3><p><span class="only-d">Renovering och installation av dusch, WC, handfat och golvbrunn.</span><span class="only-m">Dusch, WC, handfat och golvbrunn.</span></p><a href="#kontakt" class="link" data-scroll>Läs mer <svg class="i"><use href="#i-arrow"/></svg></a><span class="m-arrow only-m" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span></div>
             </article>
             <article class="pcard" data-reveal style="--d:.12s">
               <div class="pcard__img"><img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=700&q=70" alt="Blandare vid handfat" loading="lazy"></div>
-              <div class="pcard__body"><h3>Service &amp; reparation</h3><p>Läckor, stopp, droppande kranar och byte av blandare.</p><a href="#kontakt" class="link" data-scroll>Läs mer <svg class="i"><use href="#i-arrow"/></svg></a></div>
+              <div class="pcard__body"><h3>Service &amp; reparation</h3><p><span class="only-d">Läckor, stopp, droppande kranar och byte av blandare.</span><span class="only-m">Läckor, stopp och byte av blandare.</span></p><a href="#kontakt" class="link" data-scroll>Läs mer <svg class="i"><use href="#i-arrow"/></svg></a><span class="m-arrow only-m" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span></div>
             </article>
             <article class="pcard" data-reveal style="--d:.19s">
               <div class="pcard__img"><img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=700&q=70" alt="Rördragning med ventiler" loading="lazy"></div>
-              <div class="pcard__body"><h3>Värme</h3><p>Element, golvvärme, varmvattenberedare och värmepumpar.</p><a href="#kontakt" class="link" data-scroll>Läs mer <svg class="i"><use href="#i-arrow"/></svg></a></div>
+              <div class="pcard__body"><h3>Värme</h3><p><span class="only-d">Element, golvvärme, varmvattenberedare och värmepumpar.</span><span class="only-m">Element, golvvärme, beredare och värmepumpar.</span></p><a href="#kontakt" class="link" data-scroll>Läs mer <svg class="i"><use href="#i-arrow"/></svg></a><span class="m-arrow only-m" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span></div>
             </article>
             <article class="pcard" data-reveal style="--d:.26s">
               <div class="pcard__img"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=700&q=70" alt="Nyinstallerat kök" loading="lazy"></div>
-              <div class="pcard__body"><h3>Nyinstallation</h3><p>Rördragning i nybygge, tillbyggnad och kök.</p><a href="#kontakt" class="link" data-scroll>Läs mer <svg class="i"><use href="#i-arrow"/></svg></a></div>
+              <div class="pcard__body"><h3>Nyinstallation</h3><p><span class="only-d">Rördragning i nybygge, tillbyggnad och kök.</span><span class="only-m">Rördragning i nybygge och kök.</span></p><a href="#kontakt" class="link" data-scroll>Läs mer <svg class="i"><use href="#i-arrow"/></svg></a><span class="m-arrow only-m" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span></div>
             </article>
           </div>
         </div>
@@ -377,12 +383,12 @@
         <div class="wrap">
           <div class="section-head section-head--center">
             <p class="eyebrow eyebrow--center" data-reveal>Så går det till</p>
-            <h2 data-reveal style="--d:.06s">Enkelt från första samtal till färdigt jobb</h2>
+            <h2 data-reveal style="--d:.06s"><span class="only-d">Enkelt från första samtal till färdigt jobb</span><span class="only-m">Enkelt från samtal till färdigt jobb</span></h2>
           </div>
           <div class="grid-3">
-            <article class="step" data-reveal style="--d:.05s"><span class="step__num">01</span><h3>Ring eller skriv till mig</h3><p>Du pratar direkt med mig – ingen växel och inga mellanhänder.</p></article>
-            <article class="step" data-reveal style="--d:.13s"><span class="step__num">02</span><h3>Få en tydlig offert</h3><p>Jag tittar på jobbet och ger dig ett fast pris. Inga överraskningar.</p></article>
-            <article class="step" data-reveal style="--d:.21s"><span class="step__num">03</span><h3>Jag gör jobbet</h3><p>Rent, noggrant och klart när jag sagt. ROT-avdraget sköter jag.</p></article>
+            <article class="step" data-reveal style="--d:.05s"><span class="step__num">01</span><h3>Ring eller skriv till mig</h3><p><span class="only-d">Du pratar direkt med mig – ingen växel och inga mellanhänder.</span><span class="only-m">Du pratar direkt med mig – ingen växel.</span></p></article>
+            <article class="step" data-reveal style="--d:.13s"><span class="step__num">02</span><h3>Få en tydlig offert</h3><p><span class="only-d">Jag tittar på jobbet och ger dig ett fast pris. Inga överraskningar.</span><span class="only-m">Fast pris – inga överraskningar.</span></p></article>
+            <article class="step" data-reveal style="--d:.21s"><span class="step__num">03</span><h3>Jag gör jobbet</h3><p><span class="only-d">Rent, noggrant och klart när jag sagt. ROT-avdraget sköter jag.</span><span class="only-m">Noggrant och klart när jag sagt.</span></p></article>
           </div>
         </div>
       </section>
@@ -397,10 +403,11 @@
             </div>
           </div>
           <div class="about__text">
+            <div class="about-m only-m"><span class="about-m__photo"><svg class="i"><use href="#i-user"/></svg></span><span><strong>Mattias Jansson</strong><small>Ägare &amp; VVS-montör</small></span></div>
             <p class="eyebrow" data-reveal>Om mig</p>
             <h2 data-reveal style="--d:.06s">Hej, jag heter Mattias!</h2>
-            <p class="muted" data-reveal style="--d:.12s">Jag är rörmokaren bakom MJ Rörteknik. 2024 startade jag eget här i Matfors, och sedan dess hjälper jag privatpersoner och företag i Sundsvall med omnejd – med allt från droppande kranar till hela badrum.</p>
-            <p class="muted" data-reveal style="--d:.16s">När du anlitar mig är det jag som svarar i telefon, kommer hem till dig och gör jobbet. Inga mellanhänder – bara tydliga besked och ett jobb jag kan stå för.</p>
+            <p class="muted" data-reveal style="--d:.12s"><span class="only-d">Jag är rörmokaren bakom MJ Rörteknik. 2024 startade jag eget här i Matfors, och sedan dess hjälper jag privatpersoner och företag i Sundsvall med omnejd – med allt från droppande kranar till hela badrum.</span><span class="only-m">Jag är rörmokaren bakom MJ Rörteknik. 2024 startade jag eget i Matfors och hjälper privatpersoner och företag i Sundsvall med omnejd.</span></p>
+            <p class="muted" data-reveal style="--d:.16s"><span class="only-d">När du anlitar mig är det jag som svarar i telefon, kommer hem till dig och gör jobbet. Inga mellanhänder – bara tydliga besked och ett jobb jag kan stå för.</span><span class="only-m">Det är jag som svarar i telefon, kommer hem till dig och gör jobbet – inga mellanhänder.</span></p>
             <blockquote class="quote" data-reveal style="--d:.2s">”Jag behandlar ditt hem som om det vore mitt eget.”</blockquote>
             <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="link link--accent" data-reveal style="--d:.26s">Se mer på Facebook <svg class="i"><use href="#i-arrow"/></svg></a>
           </div>
@@ -424,7 +431,7 @@
           <div class="contact__info">
             <p class="eyebrow" data-reveal>Kontakt</p>
             <h2 data-reveal style="--d:.06s">Hör av dig direkt<br>till mig.</h2>
-            <p class="contact__lead" data-reveal style="--d:.12s">Det är jag själv som svarar och som kommer ut på jobbet. Ring helst – eller skicka en förfrågan så återkommer jag med en offert.</p>
+            <p class="contact__lead" data-reveal style="--d:.12s"><span class="only-d">Det är jag själv som svarar och som kommer ut på jobbet. Ring helst – eller skicka en förfrågan så återkommer jag med en offert.</span><span class="only-m">Det är jag själv som svarar och kommer ut på jobbet. Ring helst – eller skriv här.</span></p>
             <a href="tel:0722008177" class="cbox cbox--warm" data-reveal style="--d:.18s">
               <small>Snabbast når du mig på telefon</small>
               <span class="cbox__main"><span class="cbox__icon cbox__icon--fill"><svg class="i"><use href="#i-phone"/></svg></span><strong class="huge">072-200 81 77</strong></span>
@@ -437,7 +444,7 @@
             </a>
             <ul class="facts" data-reveal style="--d:.3s">
               <li><span class="facts__icon"><svg class="i"><use href="#i-clock"/></svg></span><span><small>Öppettider</small><span>Vardagar 07:00–16:00</span></span></li>
-              <li><span class="facts__icon"><svg class="i"><use href="#i-pin"/></svg></span><span><small>Område</small><span>Matfors, Sundsvall, Stöde, Njurunda, Timrå m.fl.</span></span></li>
+              <li class="only-d"><span class="facts__icon"><svg class="i"><use href="#i-pin"/></svg></span><span><small>Område</small><span>Matfors, Sundsvall, Stöde, Njurunda, Timrå m.fl.</span></span></li>
             </ul>
           </div>
           <div class="form-card" data-reveal style="--d:.15s" data-form></div>
@@ -451,6 +458,7 @@
               <span class="logo-foot logo--white" data-logo="full"></span>
               <p>Rörmokare | Matfors sedan 2024.</p>
             </div>
+            <div class="footer__m only-m"><a href="tel:0722008177" class="footer__m-phone">072-200 81 77</a><a href="mailto:mattias.jansson@mjrorteknik.se">mattias.jansson@mjrorteknik.se</a><a href="https://www.facebook.com/" target="_blank" rel="noopener" class="footer__m-fb">Se mer på Facebook</a></div>
             <div class="footer__cols">
               <div><h4>Kontakt</h4><a href="tel:0722008177">072-200 81 77</a><a href="mailto:mattias.jansson@mjrorteknik.se">mattias.jansson@mjrorteknik.se</a><span>Vardagar 07:00–16:00</span></div>
               <div><h4>Sidan</h4><a href="#tjanster" data-scroll>Tjänster</a><a href="#process" data-scroll>Så går det till</a><a href="#om" data-scroll>Om mig</a><a href="#faq" data-scroll>Vanliga frågor</a><a href="#kontakt" data-scroll>Kontakt</a></div>
@@ -460,6 +468,7 @@
           <div class="footer__bottom"><span>© 2026 MJ Rörteknik AB · Org.nr XXXXXX-XXXX</span><span>Bilder: Unsplash</span></div>
         </div>
       </footer>
+      <div class="mbar only-m"><a href="tel:0722008177" class="btn mbar__call"><svg class="i"><use href="#i-phone"/></svg>Ring Mattias</a><a href="#kontakt" class="btn mbar__alt" data-scroll>Begär offert</a></div>
     </div>
   </template>
 
@@ -485,15 +494,15 @@
             <a href="mailto:mattias.jansson@mjrorteknik.se" class="header__mail"><svg class="i"><use href="#i-mail"/></svg>Mejla</a>
             <a href="tel:0722008177" class="btn btn--sky btn--sm"><svg class="i"><use href="#i-phone"/></svg>Ring Mattias</a>
           </div>
-          <button type="button" class="menu-btn" aria-label="Öppna meny" aria-expanded="false" data-menu><span></span><span></span><span></span></button>
+          <button type="button" class="menu-btn" aria-label="Öppna meny" aria-expanded="false" data-menu><span class="menu-btn__icon"><span></span><span></span><span></span></span><span class="menu-btn__label">Meny</span></button>
         </div>
       </header>
 
       <section class="hero" id="top">
         <div class="wrap hero__in">
-          <p class="pill" data-reveal>Eget företag · Matfors &amp; Sundsvall</p>
+          <p class="pill" data-reveal><span class="only-d">Eget företag · Matfors &amp; Sundsvall</span><span class="only-m">Eget företag i Matfors</span></p>
           <h1 data-reveal style="--d:.08s">Rörmokaren du når direkt.</h1>
-          <p class="lead" data-reveal style="--d:.16s">Jag heter Mattias och driver MJ Rörteknik. När du ringer svarar jag själv – och det är jag som kommer hem till dig och gör jobbet. Badrum, service, värme och nyinstallationer.</p>
+          <p class="lead" data-reveal style="--d:.16s">Jag heter Mattias och driver MJ Rörteknik. <span class="only-d">När du ringer svarar jag själv – och det är jag som kommer hem till dig och gör jobbet. Badrum, service, värme och nyinstallationer.</span><span class="only-m">När du ringer svarar jag själv – och det är jag som gör jobbet hos dig.</span></p>
           <div class="btn-row" data-reveal style="--d:.24s">
             <a href="tel:0722008177" class="btn btn--sky"><svg class="i"><use href="#i-phone"/></svg>Ring 072-200 81 77</a>
             <a href="mailto:mattias.jansson@mjrorteknik.se" class="btn btn--line"><svg class="i"><use href="#i-mail"/></svg>Mejla mig</a>
@@ -507,7 +516,7 @@
             <a href="tel:0722008177"><span class="ibox"><svg class="i"><use href="#i-phone"/></svg></span><span><small>Ring Mattias</small><strong>072-200 81 77</strong></span></a>
             <a href="mailto:mattias.jansson@mjrorteknik.se"><span class="ibox"><svg class="i"><use href="#i-mail"/></svg></span><span><small>Mejla</small><strong>mattias.jansson@mjrorteknik.se</strong></span></a>
             <div><span class="ibox"><svg class="i"><use href="#i-clock"/></svg></span><span><small>Öppettider</small><strong>Vardagar 07–16</strong></span></div>
-            <div><span class="ibox"><svg class="i"><use href="#i-pin"/></svg></span><span><small>Område</small><strong>Matfors · Sundsvall</strong></span></div>
+            <div class="only-d"><span class="ibox"><svg class="i"><use href="#i-pin"/></svg></span><span><small>Område</small><strong>Matfors · Sundsvall</strong></span></div>
           </div>
         </div>
       </section>
@@ -518,14 +527,15 @@
             <p class="pill pill--light" data-reveal>Tjänster</p>
             <h2 data-reveal style="--d:.06s">Det här kan jag hjälpa dig med</h2>
             <p class="muted" data-reveal style="--d:.12s">Ingen uppgift är för liten. Hör av dig så berättar jag hur jag kan lösa det.</p>
-            <a href="#kontakt" class="btn btn--slate" data-scroll data-reveal style="--d:.18s"><svg class="i"><use href="#i-arrow"/></svg>Begär offert</a>
+            <a href="#kontakt" class="btn btn--slate only-d" data-scroll data-reveal style="--d:.18s"><svg class="i"><use href="#i-arrow"/></svg>Begär offert</a>
           </div>
           <div class="slist" data-reveal style="--d:.1s">
-            <a href="#kontakt" data-scroll class="slist__item"><span class="slist__num">01</span><span><strong>Badrum</strong><small>Renovering och installation av dusch, WC, handfat och golvbrunn.</small></span><span class="slist__go"><svg class="i"><use href="#i-arrow"/></svg></span></a>
-            <a href="#kontakt" data-scroll class="slist__item"><span class="slist__num">02</span><span><strong>Service &amp; reparation</strong><small>Läckor, stopp, droppande kranar och byte av blandare.</small></span><span class="slist__go"><svg class="i"><use href="#i-arrow"/></svg></span></a>
-            <a href="#kontakt" data-scroll class="slist__item"><span class="slist__num">03</span><span><strong>Värme</strong><small>Element, golvvärme, varmvattenberedare och värmepumpar.</small></span><span class="slist__go"><svg class="i"><use href="#i-arrow"/></svg></span></a>
-            <a href="#kontakt" data-scroll class="slist__item"><span class="slist__num">04</span><span><strong>Nyinstallation</strong><small>Rördragning i nybygge, tillbyggnad och kök.</small></span><span class="slist__go"><svg class="i"><use href="#i-arrow"/></svg></span></a>
+            <a href="#kontakt" data-scroll class="slist__item"><span class="slist__num">01</span><span><strong>Badrum</strong><small><span class="only-d">Renovering och installation av dusch, WC, handfat och golvbrunn.</span><span class="only-m">Dusch, WC, handfat och golvbrunn.</span></small></span><span class="slist__go"><svg class="i"><use href="#i-arrow"/></svg></span></a>
+            <a href="#kontakt" data-scroll class="slist__item"><span class="slist__num">02</span><span><strong>Service &amp; reparation</strong><small><span class="only-d">Läckor, stopp, droppande kranar och byte av blandare.</span><span class="only-m">Läckor, stopp och byte av blandare.</span></small></span><span class="slist__go"><svg class="i"><use href="#i-arrow"/></svg></span></a>
+            <a href="#kontakt" data-scroll class="slist__item"><span class="slist__num">03</span><span><strong>Värme</strong><small><span class="only-d">Element, golvvärme, varmvattenberedare och värmepumpar.</span><span class="only-m">Element, golvvärme och värmepumpar.</span></small></span><span class="slist__go"><svg class="i"><use href="#i-arrow"/></svg></span></a>
+            <a href="#kontakt" data-scroll class="slist__item"><span class="slist__num">04</span><span><strong>Nyinstallation</strong><small><span class="only-d">Rördragning i nybygge, tillbyggnad och kök.</span><span class="only-m">Rördragning i nybygge och kök.</span></small></span><span class="slist__go"><svg class="i"><use href="#i-arrow"/></svg></span></a>
           </div>
+          <a href="#kontakt" class="btn btn--slate services__mbtn only-m" data-scroll><svg class="i"><use href="#i-arrow"/></svg>Begär offert</a>
         </div>
       </section>
 
@@ -533,12 +543,12 @@
         <div class="wrap">
           <div class="section-head section-head--center">
             <p class="pill" data-reveal>Så går det till</p>
-            <h2 data-reveal style="--d:.06s">Enkelt från första samtal till färdigt jobb</h2>
+            <h2 data-reveal style="--d:.06s"><span class="only-d">Enkelt från första samtal till färdigt jobb</span><span class="only-m">Enkelt från samtal till färdigt jobb</span></h2>
           </div>
           <div class="timeline">
-            <article class="tstep" data-reveal style="--d:.05s"><span class="tstep__num">1</span><h3>Ring eller skriv till mig</h3><p>Du pratar direkt med mig – ingen växel och inga mellanhänder.</p></article>
-            <article class="tstep" data-reveal style="--d:.15s"><span class="tstep__num">2</span><h3>Få en tydlig offert</h3><p>Jag tittar på jobbet och ger dig ett fast pris. Inga överraskningar.</p></article>
-            <article class="tstep" data-reveal style="--d:.25s"><span class="tstep__num">3</span><h3>Jag gör jobbet</h3><p>Rent, noggrant och klart när jag sagt. ROT-avdraget sköter jag.</p></article>
+            <article class="tstep" data-reveal style="--d:.05s"><span class="tstep__num">1</span><h3>Ring eller skriv till mig</h3><p><span class="only-d">Du pratar direkt med mig – ingen växel och inga mellanhänder.</span><span class="only-m">Du pratar direkt med mig – ingen växel.</span></p></article>
+            <article class="tstep" data-reveal style="--d:.15s"><span class="tstep__num">2</span><h3>Få en tydlig offert</h3><p><span class="only-d">Jag tittar på jobbet och ger dig ett fast pris. Inga överraskningar.</span><span class="only-m">Fast pris – inga överraskningar.</span></p></article>
+            <article class="tstep" data-reveal style="--d:.25s"><span class="tstep__num">3</span><h3>Jag gör jobbet</h3><p><span class="only-d">Rent, noggrant och klart när jag sagt. ROT-avdraget sköter jag.</span><span class="only-m">Noggrant och klart när jag sagt.</span></p></article>
           </div>
         </div>
       </section>
@@ -548,10 +558,11 @@
           <div class="about-card" data-reveal>
             <div class="about-card__photo"><span><svg class="i"><use href="#i-user"/></svg>Foto på Mattias</span></div>
             <div class="about-card__text">
-              <p class="pill pill--light">Om mig</p>
+              <div class="about-m only-m"><span class="about-m__photo"><svg class="i"><use href="#i-user"/></svg></span><span><strong>Mattias Jansson</strong><small>Ägare &amp; VVS-montör</small></span></div>
+            <p class="pill pill--light">Om mig</p>
               <h2>Hej, jag heter Mattias!</h2>
-              <p class="muted">Jag är rörmokaren bakom MJ Rörteknik. 2024 startade jag eget här i Matfors, och sedan dess hjälper jag privatpersoner och företag i Sundsvall med omnejd – med allt från droppande kranar till hela badrum.</p>
-              <p class="muted">När du anlitar mig är det jag som svarar i telefon, kommer hem till dig och gör jobbet. Inga mellanhänder – bara tydliga besked och ett jobb jag kan stå för.</p>
+              <p class="muted"><span class="only-d">Jag är rörmokaren bakom MJ Rörteknik. 2024 startade jag eget här i Matfors, och sedan dess hjälper jag privatpersoner och företag i Sundsvall med omnejd – med allt från droppande kranar till hela badrum.</span><span class="only-m">Jag är rörmokaren bakom MJ Rörteknik. 2024 startade jag eget i Matfors och hjälper privatpersoner och företag i Sundsvall med omnejd. Det är jag som svarar i telefon och gör jobbet – inga mellanhänder.</span></p>
+              <p class="muted only-d">När du anlitar mig är det jag som svarar i telefon, kommer hem till dig och gör jobbet. Inga mellanhänder – bara tydliga besked och ett jobb jag kan stå för.</p>
               <blockquote class="quote">”Jag behandlar ditt hem som om det vore mitt eget.”</blockquote>
               <div class="sign">
                 <span class="logo-badge logo--black" data-logo="full"></span>
@@ -578,10 +589,10 @@
           <div class="contact__info">
             <p class="pill" data-reveal>Kontakt</p>
             <h2 data-reveal style="--d:.06s">Ring eller mejla –<br>jag svarar själv.</h2>
-            <p class="contact__lead" data-reveal style="--d:.12s">Snabbast når du mig på telefon. Du kan också mejla eller skicka en förfrågan här, så återkommer jag med en offert.</p>
+            <p class="contact__lead only-d" data-reveal style="--d:.12s">Snabbast når du mig på telefon. Du kan också mejla eller skicka en förfrågan här, så återkommer jag med en offert.</p>
             <a href="tel:0722008177" class="cbox" data-reveal style="--d:.18s"><span class="ibox ibox--sky"><svg class="i"><use href="#i-phone"/></svg></span><span><small>Ring eller sms:a Mattias</small><strong class="huge">072-200 81 77</strong></span></a>
             <a href="mailto:mattias.jansson@mjrorteknik.se" class="cbox" data-reveal style="--d:.24s"><span class="ibox ibox--sky"><svg class="i"><use href="#i-mail"/></svg></span><span><small>Mejla Mattias</small><strong class="large">mattias.jansson@mjrorteknik.se</strong></span></a>
-            <p class="contact__meta" data-reveal style="--d:.3s"><span><svg class="i"><use href="#i-clock"/></svg>Vardagar 07:00–16:00</span><span><svg class="i"><use href="#i-pin"/></svg>Matfors, Sundsvall m.fl.</span></p>
+            <p class="contact__meta only-d" data-reveal style="--d:.3s"><span><svg class="i"><use href="#i-clock"/></svg>Vardagar 07:00–16:00</span><span><svg class="i"><use href="#i-pin"/></svg>Matfors, Sundsvall m.fl.</span></p>
           </div>
           <div class="form-card" data-reveal style="--d:.15s" data-form></div>
         </div>
@@ -594,6 +605,7 @@
               <span class="logo-foot logo-foot--sm logo--white" data-logo="full"></span>
               <span><strong>MJ Rörteknik AB</strong><small>Eget företag i Matfors sedan 2024</small></span>
             </div>
+            <div class="footer__m only-m"><a href="tel:0722008177" class="footer__m-phone">072-200 81 77</a><a href="mailto:mattias.jansson@mjrorteknik.se">mattias.jansson@mjrorteknik.se</a><a href="https://www.facebook.com/" target="_blank" rel="noopener" class="footer__m-fb">Se mer på Facebook</a></div>
             <div class="footer__contact">
               <a href="tel:0722008177"><svg class="i"><use href="#i-phone"/></svg>072-200 81 77</a>
               <a href="mailto:mattias.jansson@mjrorteknik.se"><svg class="i"><use href="#i-mail"/></svg>mattias.jansson@mjrorteknik.se</a>
@@ -605,6 +617,7 @@
           </div>
         </div>
       </footer>
+      <div class="mbar only-m"><a href="tel:0722008177" class="btn mbar__call"><svg class="i"><use href="#i-phone"/></svg>Ring Mattias</a><a href="mailto:mattias.jansson@mjrorteknik.se" class="btn mbar__alt"><svg class="i"><use href="#i-mail"/></svg>Mejla</a></div>
     </div>
   </template>
 
@@ -637,7 +650,7 @@
       <label class="upload">
         <input type="file" accept="image/*" multiple>
         <svg class="i"><use href="#i-upload"/></svg>
-        <span><strong>Bifoga bilder (valfritt)</strong><small data-upload-text>Bilder gör att jag kan bedöma jobbet snabbare.</small></span>
+        <span><strong>Bifoga bilder (valfritt)</strong><small data-upload-text><span class="only-d">Bilder gör att jag kan bedöma jobbet snabbare.</span><span class="only-m">Gör det lättare att bedöma jobbet.</span></small></span>
       </label>
       <button type="submit" class="btn rform__submit"><svg class="i"><use href="#i-arrow"/></svg>Skicka förfrågan</button>
       <p class="rform__note">Jag använder dina uppgifter bara för att svara på din förfrågan.</p>

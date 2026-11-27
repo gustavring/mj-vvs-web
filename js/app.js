@@ -319,10 +319,10 @@
 
       const file = form.querySelector('.upload input');
       const fileText = form.querySelector('[data-upload-text]');
-      const defaultText = fileText.textContent;
+      const defaultText = fileText.innerHTML;
       file.addEventListener('change', () => {
         const n = file.files.length;
-        fileText.textContent = n ? (n === 1 ? file.files[0].name : `${n} bilder valda`) : defaultText;
+        if (n) fileText.textContent = n === 1 ? file.files[0].name : `${n} bilder valda`; else fileText.innerHTML = defaultText;
         form.querySelector('.upload').classList.toggle('has-files', n > 0);
       });
 
@@ -348,7 +348,7 @@
         form.reset();
         resetChips();
         form.querySelectorAll('.is-invalid').forEach((l) => l.classList.remove('is-invalid'));
-        fileText.textContent = defaultText;
+        fileText.innerHTML = defaultText;
         form.querySelector('.upload').classList.remove('has-files');
         form.classList.remove('is-sent');
         form.querySelector('.rform__done').hidden = true;
