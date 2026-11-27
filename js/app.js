@@ -37,6 +37,52 @@
       <text x="90.5" y="170" font-size="16.5" ${sans}>Est 2024</text>` : ''}
     </svg>`;
   }
+  /* ---------- Inga fula radbyten ----------
+     Telefonnummer, tider, e-postadresser och ord med bindestreck
+     (t.ex. "ROT-avdraget") läggs i <span class="nw"> så att de aldrig
+     delas på två rader. */
+  const KEEP_TOGETHER = new RegExp([
+    '[\\w.+-]+@[\\w-]+(?:\\.[\\w-]+)+',            // e-post
+    '\\d{3}-\\d{3}(?: \\d{2}){2}',                  // 072-200 81 77
+    '\\d{2}:\\d{2}\\s?[–-]\\s?\\d{2}:\\d{2}',       // 07:00–16:00
+    '\\d{2}[–-]\\d{2}',                             // 07–16
+    '[A-Za-zÅÄÖåäöÉé]+(?:-[A-Za-zÅÄÖåäöÉé]+)+',     // ROT-avdraget, VVS-montör
+    '[A-Za-zÅÄÖåäö]+:[a-zåäö]+',                    // sms:a, BRF:er
+  ].join('|'), 'g');
+
+  function keepTogether(root) {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode: (n) => (n.parentElement.closest('svg, script, style, textarea, .nw')
+        ? NodeFilter.FILTER_REJECT
+        : (n.nodeValue.search(KEEP_TOGETHER) !== -1 ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP)),
+    });
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach((node) => {
+      const frag = document.createDocumentFragment();
+      let last = 0;
+      node.nodeValue.replace(KEEP_TOGETHER, (match, offset) => {
+        if (offset > last) frag.append(node.nodeValue.slice(last, offset));
+        const span = document.createElement('span');
+        span.className = 'nw';
+        span.textContent = match;
+        frag.append(span);
+        last = offset + match.length;
+      });
+      if (last < node.nodeValue.length) frag.append(node.nodeValue.slice(last));
+      // I flex/grid-rader skulle varje bit bli ett eget element med glapp emellan:
+      // samla då hela texten i en span så den beter sig som vanlig text.
+      const d = getComputedStyle(node.parentElement).display;
+      if (d.includes('flex') || d.includes('grid')) {
+        const wrap = document.createElement('span');
+        wrap.append(frag);
+        node.replaceWith(wrap);
+      } else {
+        node.replaceWith(frag);
+      }
+    });
+  }
+
   function fillLogos(root) {
     root.querySelectorAll('[data-logo]').forEach((el) => { el.innerHTML = logoSvg(el.dataset.logo); });
   }
@@ -57,6 +103,7 @@
     fillForms(page);
 
     app.replaceChildren(page);
+    keepTogether(page); // efter att sidan ligger i dokumentet (behöver beräknad stil)
     document.body.dataset.page = name;
     window.scrollTo({ top: 0, behavior: 'instant' });
 
