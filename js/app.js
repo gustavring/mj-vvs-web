@@ -29,12 +29,12 @@
     const sans = "font-family=\"Barlow, 'Inter', sans-serif\"";
     return `<svg class="logo-svg logo-svg--${variant}" viewBox="-2 -2 200 224" role="img" aria-label="MJ Rörteknik AB" fill="currentColor">
       ${full ? `<mask id="${id}" maskUnits="userSpaceOnUse" x="-2" y="-2" width="200" height="224">
-        <rect x="-2" y="-2" width="200" height="224" fill="#fff"/><rect x="-2" y="118" width="200" height="32" fill="#000"/>
+        <rect x="-2" y="-2" width="200" height="224" fill="#fff"/><rect x="-2" y="110" width="200" height="40.7" fill="#000"/>
       </mask>` : ''}
       <text x="-4.65" y="110" font-size="155" ${serif}>M</text>
-      <text x="140.5" y="186.4" font-size="178" ${serif}${full ? ` mask="url(#${id})"` : ''}>J</text>
-      ${full ? `<text x="-1.5" y="147" font-size="30" ${sans}>RÖRTEKNIK AB</text>
-      <text x="90.5" y="170" font-size="16.5" ${sans}>Est 2024</text>` : ''}
+      <text x="135.8" y="185.1" font-size="178" ${serif}${full ? ` mask="url(#${id})"` : ''}>J</text>
+      ${full ? `<text x="-1.3" y="143" font-size="28.8" ${sans}>RÖRTEKNIK AB</text>
+      <text x="86.6" y="167" font-size="15.8" ${sans}>Est 2024</text>` : ''}
     </svg>`;
   }
   /* ---------- Inga fula radbyten ----------
